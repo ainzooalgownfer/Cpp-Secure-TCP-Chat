@@ -1,0 +1,13 @@
+# CLion / JetBrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# Compiled files
+*.exe
+*.o
+*.obj
+
+# OpenSSL / Keys (Safety first!)
+*.pem
+*.key
