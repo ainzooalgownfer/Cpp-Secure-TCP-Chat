@@ -38,22 +38,7 @@ Before you begin, ensure you have the following installed:
 
     MSVC or MinGW (on Windows)
 
- Installation & Setup
-
-    Clone the repository:
-    Bash
-
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    cd YOUR_REPO_NAME
-
-    Configure CMake: Ensure your CMakeLists.txt is pointing to your OpenSSL installation.
-    CMake
-
-    find_package(OpenSSL REQUIRED)
-    target_link_libraries(ProjectName PRIVATE OpenSSL::Crypto Ws2_32)
-
-    Build: In CLion, click Build > Build Project.
-
+ 
  Usage
 
     Start the Server: Run the Server executable. It will listen on port 8080 by default.
