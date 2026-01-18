@@ -1,7 +1,7 @@
 🛡️ Secure TCP Chat (RSA + AES)
 
 A high-performance C++ networking project that implements End-to-End Encryption (E2EE) using the OpenSSL library. This project demonstrates a secure "Handshake" protocol to exchange keys over an untrusted network.
-🚀 Overview
+ Overview
 
 This project consists of a Secure Server and a Secure Client. Unlike standard TCP connections that send data in "Plaintext," this system ensures that even if someone intercepts your network traffic, they cannot read your messages.
 The Security Logic:
