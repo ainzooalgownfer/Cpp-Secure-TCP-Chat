@@ -144,13 +144,13 @@ string Crypto::encryptRSA(const string& text) const {
 
     vector<unsigned char> encrypted(RSA_size(rsa));
 
-    // 3. FIX: Use OAEP Padding to match the decryption method
+    
     int len = RSA_public_encrypt(
         text.size(),
         (unsigned char*)text.data(),
         encrypted.data(),
         rsa,
-        RSA_PKCS1_OAEP_PADDING); // Changed from PKCS1_PADDING
+        RSA_PKCS1_OAEP_PADDING); 
 
     RSA_free(rsa);
     if (len == -1) throw Error("RSA encrypt failed");
